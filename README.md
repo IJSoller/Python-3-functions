@@ -42,3 +42,5 @@ list.remove["item"] #removes item from a list
 
 dict[list_in_dict].list_function() #this is the general layout for using a list command on a list nested in a dictionary
 
+list[index number] = x #replaces the object at index number with x.
+
