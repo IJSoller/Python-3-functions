@@ -38,9 +38,18 @@ dict[key] = 20 #adds key:20 to the dictionary, so it looks like dict={key:20}
 
 del dict[key] #deletes the key in the dictionary
 
-list.remove["item"] #removes item from a list
+list.remove["item"] #removes item from a list. does NOT take index NUMBER as input- use the actual name of the item.
 
 dict[list_in_dict].list_function() #this is the general layout for using a list command on a list nested in a dictionary
 
 list[index number] = x #replaces the object at index number with x.
+
+n.pop(index number) #deletes the index and returns it
+
+del(list[index number]) #deletes the index 
+
+range(6) #creates a list from 0 to 5
+range(1,6) #creates a list from 1 to 5
+range( 1, 10, 3) #creates a list of 1, 4, and 10. 
+
 
