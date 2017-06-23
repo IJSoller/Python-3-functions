@@ -52,4 +52,18 @@ range(6) #creates a list from 0 to 5
 range(1,6) #creates a list from 1 to 5
 range( 1, 10, 3) #creates a list of 1, 4, and 10. 
 
+print list_containing_lists[list][item number in that list] #allows you to access an item in a list when that list is in a list
+
+print(something), #prints stuff on the same line
+
+for index, item in enumerate(list):
+  print index + 1, item
+  # prints numbers along side list items
+  
+#the zip function will create pairs of elements when passed two or more lists, and will stop at the end of the shorter list
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
+for a, b in zip(list_a, list_b):
+  
+
 
