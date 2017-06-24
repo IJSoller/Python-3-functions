@@ -65,5 +65,5 @@ list_a = [1, 2, 3]
 list_b = [4, 5, 6]
 for a, b in zip(list_a, list_b):
   
-
+list.split() #converts list="rando text to split" into list="rando", "text", "to", "split". When you use a loop to iterate through the list after splitting it, it iterates through the strings as a whole, not the individual letters.
 
