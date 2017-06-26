@@ -1,0 +1,14 @@
+print 5 >> 4  # Right Shiftprint 
+5 << 1  # Left Shiftprint 
+8 & 5   # Bitwise ANDprint.
+# prints where both bits are on.
+9 | 4   # Bitwise ORprint. Prints where either bit is on. Inclusive.
+12 ^ 42 # Bitwise XORprint
+#XOR -> if ONLY one bit is on, it is on in the resultant. If both bits are on or both are off, they are not on in the resultant. Exclusive.
+~88     # Bitwise NOT
+
+print bin(number) #prints the binary code. 
+
+print int("111",2)
+print int("0b100",2)
+
