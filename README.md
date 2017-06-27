@@ -76,3 +76,6 @@ doubles_by_3 = [x*2 for x in range(1,6) if (x*2) % 3 == 0] #returns doubles_by_3
 list = range(16)
 print(filter(lambda x: x% 3 == 0, list)) #reads def lambda(x) - > if x%3==0 with list as input. prints[0, 3, 6, 9, 12, 15
 
+Class Derived(Base)
+  def full_time_wage(self, hours):
+    return super(Derived, self).Original_Method(arguments, but self is already taken by super fn) #calls the parent method
