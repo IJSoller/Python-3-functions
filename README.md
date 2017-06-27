@@ -67,3 +67,12 @@ for a, b in zip(list_a, list_b):
   
 list.split() #converts list="rando text to split" into list="rando", "text", "to", "split". When you use a loop to iterate through the list after splitting it, it iterates through the strings as a whole, not the individual letters.
 
+dict.items() #prints the dictionary
+dict.keys() #prints the keys
+dict.values() #prints the 
+
+doubles_by_3 = [x*2 for x in range(1,6) if (x*2) % 3 == 0] #returns doubles_by_3 = [6]
+
+list = range(16)
+print(filter(lambda x: x% 3 == 0, list)) #reads def lambda(x) - > if x%3==0 with list as input. prints[0, 3, 6, 9, 12, 15
+
