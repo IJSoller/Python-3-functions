@@ -79,3 +79,11 @@ print(filter(lambda x: x% 3 == 0, list)) #reads def lambda(x) - > if x%3==0 with
 Class Derived(Base)
   def full_time_wage(self, hours):
     return super(Derived, self).Original_Method(arguments, but self is already taken by super fn) #calls the parent method
+   
+my_file = open("file.txt", "r+") #Allows us to read and write in file
+my_file.write("Data to be written) #Writes data to my_file's file. requires a string fn. You MUST close file by my_file.close()
+my_file.close() #required after opening
+my_file.read() #reads the entire fille
+my_file.readline() #reads individual lines
+
+with open("file", "method") as variable: #Read or write to the file
