@@ -87,3 +87,12 @@ my_file.read() #reads the entire fille
 my_file.readline() #reads individual lines
 
 with open("file", "method") as variable: #Read or write to the file
+
+def rando_fn():
+   global variable_name
+   variable_name = "x" #reassigns a global variable within a local setting
+   
+try:
+  #code that may be messed up here
+except Error_here:
+  print("Message that indicates something went wrong")
