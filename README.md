@@ -96,3 +96,6 @@ try:
   #code that may be messed up here
 except Error_here:
   print("Message that indicates something went wrong")
+
+list = [[a, b], [c, d, e]]
+list[0][1] -> b #refers to the first list in the list (lol)
