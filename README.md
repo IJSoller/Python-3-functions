@@ -99,3 +99,6 @@ except Error_here:
 
 list = [[a, b], [c, d, e]]
 list[0][1] -> b #refers to the first list in the list (lol)
+
+cat = ["fat", "orange", "loud"]
+size, color, disposition = cat
