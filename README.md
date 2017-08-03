@@ -106,3 +106,6 @@ size, color, disposition = cat
 print('string', end='') #causes the next print statement to immediately follow
 print('something')
 yields >>> 'stringsomething'
+
+print('cats', 'dogs', 'mice', sep=',') #causes the spaces to dissapear
+>>> catsdogsmice
