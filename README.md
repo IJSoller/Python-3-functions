@@ -102,3 +102,7 @@ list[0][1] -> b #refers to the first list in the list (lol)
 
 cat = ["fat", "orange", "loud"]
 size, color, disposition = cat
+
+print('string', end='') #causes the next print statement to immediately follow
+print('something')
+yields >>> 'stringsomething'
