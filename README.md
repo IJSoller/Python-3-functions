@@ -32,13 +32,14 @@ list.index(x) #finds x in the list
 list.insert(2, x) #inserts x at index 2, and pushes everything down.
 
 list.sort() #sorts a list alphabetically or numerically
+list.sort(reverse = True) #sorts a list opposite of alphabetical
 
 dict = {}
 dict[key] = 20 #adds key:20 to the dictionary, so it looks like dict={key:20}
 
 del dict[key] #deletes the key in the dictionary
 
-list.remove["item"] #removes item from a list. does NOT take index NUMBER as input- use the actual name of the item.
+list.remove("item") #removes item from a list. does NOT take index NUMBER as input- use the actual name of the item.
 
 dict[list_in_dict].list_function() #this is the general layout for using a list command on a list nested in a dictionary
 
@@ -109,3 +110,14 @@ yields >>> 'stringsomething'
 
 print('cats', 'dogs', 'mice', sep=',') #causes the spaces to dissapear
 >>> catsdogsmice
+
+def spam():
+  global eggs  #makes the variable global, even though it is in a function
+  eggs = spam  #this is a global function, because of the line above
+  
+def spam(divideBy):
+    try:                        # The try and tries the code and ignores the except error
+        return 42/divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument')
+
