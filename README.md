@@ -33,6 +33,7 @@ list.insert(2, x) #inserts x at index 2, and pushes everything down.
 
 list.sort() #sorts a list alphabetically or numerically
 list.sort(reverse = True) #sorts a list opposite of alphabetical
+list.sort(key = str.lower) #treats all items in list as if they were lowercase
 
 dict = {}
 dict[key] = 20 #adds key:20 to the dictionary, so it looks like dict={key:20}
@@ -121,3 +122,52 @@ def spam(divideBy):
     except ZeroDivisionError:
         print('Error: Invalid argument')
 
+list2 = copy.copy(list) #allows you to create a copy of a list with a new reference, so you don't modify the original list
+copy.deepcopy # copies inner lists
+
+for x in dictionary.values()
+  print(v) #prints out the values in a dictionary
+  
+for x in dictionary.keys():
+  print(x)
+  
+for x in dictionary.items():
+  print(x)
+  
+for k, v in dictionary.items():
+  print('Keys ': + k + 'Values: ' v) 
+  
+'thing' in dictionary.keys #Gives a Boolean if 'thing' is in dictionary. can be used on values or just the dict. Also works with not in.
+
+dictionary.get(key, fallback) #prints the key's value, or the fallback value you enter.
+
+dictionary.setdefault(key, desired_value) #looks for the key. If it is not present, the key and desired value are added to the dict.
+
+import pprint
+pprint.pprint(dictionary) #Prints out a cleaner dictionary list
+print(pprint.pformat(dictionary)) #Prints it out in string format
+
+'string'.islower() #returns True or False
+'string'.isalpha() #returns True if string consists only of letters and is not blank
+'string'.isalnum() #returns True if string consists only of letters and numbers and is not blank
+'string'.isdecimal() #returns True if string consists only of numbers and is not blank
+'string'.isspace() #returns True if string consists only of spaces, tabs, and new lines and is not blank
+'string'.istitle() #returns True if string consists only of words that begin with an uppercase letter followed by lowercase letters
+
+'X Y'.startswith('X') #returns True if string starts with X.
+'X Y'.endswith('Y') #returns True if string ends with Y.
+
+', '.join(['item 1', 'item 2', 'item 3']) 
+>>> 'item 1, item 2, item 3' #join turns a list of strings into a single string and inserts ', ' inbetween. 
+
+'item 1, item 2, item 3'.split()
+>>> ['item', '1', 'item', '2', 'item', '3'] #splits a string into a list at whitespaces. Can add string in split to create a divider.
+
+'string'.rjust(10)
+'    string' #pads the string to the right for a total string length of 10 spaces. also usable with ljust.
+
+'string'.rjust(10, '-')
+'----string'
+
+'string'.center(10, '-')
+'--string--'   #works just like rjust and ljust.
