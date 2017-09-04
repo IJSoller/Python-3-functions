@@ -171,3 +171,7 @@ print(pprint.pformat(dictionary)) #Prints it out in string format
 
 'string'.center(10, '-')
 '--string--'   #works just like rjust and ljust.
+
+Phone_Number_Regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') #compiles the regex object
+mo = Phone_Number_Regex.search('My number is 415-555-4242') #searches a string for the regex object
+print('Phone number found: ' +mo.group()) # prints 'Phone number found: 415-555-4242'
