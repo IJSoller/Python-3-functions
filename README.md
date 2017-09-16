@@ -175,3 +175,14 @@ print(pprint.pformat(dictionary)) #Prints it out in string format
 Phone_Number_Regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') #compiles the regex object
 mo = Phone_Number_Regex.search('My number is 415-555-4242') #searches a string for the regex object
 print('Phone number found: ' +mo.group()) # prints 'Phone number found: 415-555-4242'
+
+Regex functions:
+| is or. Finds the first item in the object.
+()? matches zero or 1 instance of items in the parentheses. 
+()* m*atches zero or more instances of items in the parentheses. 
+()+ matches one or more instances of items in the parentheses.
+(){3,5} greedily matches 3 to 5 instances of the items in the parentheses
+(){3,5}? nongreedily matches 3 to 5 instances of the items in the parentheses
+
+mo = Phone_Number_Regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+ # yields ['415-555-9999', '212-555-0000']. You don't have to type in mo.group()
