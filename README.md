@@ -185,4 +185,4 @@ Regex functions:
 (){3,5}? nongreedily matches 3 to 5 instances of the items in the parentheses
 
 mo = Phone_Number_Regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
- # yields ['415-555-9999', '212-555-0000']. You don't have to type in mo.group()
+ yields ['415-555-9999', '212-555-0000']. You don't have to type in mo.group()
