@@ -186,3 +186,13 @@ Regex functions:
 
 mo = Phone_Number_Regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
  yields ['415-555-9999', '212-555-0000']. You don't have to type in mo.group()
+ 
+^ means the regex search must begin with the object. In class brackets, the regex finds everything that is not in the brackets.
+$ comes at the end of the object. The regex search must end with the object.
+^x$ means that the search must begin and end with x. 
+. is a wildcard character. It matches anything. 
+Regex = ('.* '*, re.DOTALL). The DOTALL includes new lines (\n). (The second star is just for formatting.)
+Regex = ('.*' *, re.I). Ignores capitalization etc
+
+Regex = (r'x')
+Regex.sub('y', 'x marks the spot!') #yields 'y marks the spot!'
